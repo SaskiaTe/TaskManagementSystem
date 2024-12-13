@@ -28,9 +28,9 @@ public class Task
         status = newStatus; 
     }
 
-    public string GetStatus()
+    public Status GetStatus()
     {
-        return status.ToString();
+        return status;
     }
     
     public void DisplayTask()
