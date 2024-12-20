@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManagementSystem", "TaskManagementSystem\TaskManagementSystem.csproj", "{242087CC-4DC4-4A00-B314-11F1EC5307EF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManagementSystemTest", "TaskManagementSystemTest\TaskManagementSystemTest.csproj", "{893EB9EF-0FDB-4BB4-918D-5B9B0F5AA8AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{242087CC-4DC4-4A00-B314-11F1EC5307EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{242087CC-4DC4-4A00-B314-11F1EC5307EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{242087CC-4DC4-4A00-B314-11F1EC5307EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{893EB9EF-0FDB-4BB4-918D-5B9B0F5AA8AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{893EB9EF-0FDB-4BB4-918D-5B9B0F5AA8AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{893EB9EF-0FDB-4BB4-918D-5B9B0F5AA8AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{893EB9EF-0FDB-4BB4-918D-5B9B0F5AA8AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

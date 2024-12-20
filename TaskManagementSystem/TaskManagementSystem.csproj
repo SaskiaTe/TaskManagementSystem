@@ -7,4 +7,11 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+
+    <ItemGroup>
+        <AssemblyAttribute
+                Include="System. Runtime.CompilerServices.InternalsVisibleToAttribute">
+            <Parameter>TaskManagmentSystemTest</Parameter>
+        </AssemblyAttribute>        
+    </ItemGroup>
 </Project>
