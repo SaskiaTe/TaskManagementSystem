@@ -33,7 +33,7 @@ public class Task
         return status;
     }
     
-    public void DisplayTask()
+    public virtual void DisplayTask()
     {
         Console.ForegroundColor = ConsoleColor.Cyan;
         Console.WriteLine("=====================================");
@@ -46,7 +46,7 @@ public class Task
         Console.WriteLine($"Priorität: {prioriteat}"); 
         Console.WriteLine($"Schätzung: {scheatzung} Stunden");
         Console.WriteLine($"Status: {status}");
-    
+        
         Console.WriteLine("=====================================");
         Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine($"Autor: {autor.GetName()}");
@@ -54,6 +54,4 @@ public class Task
 
         Console.WriteLine("=====================================");    
     }
-    
-    
 }
