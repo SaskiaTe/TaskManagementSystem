@@ -28,12 +28,12 @@ public class Task
         status = newStatus; 
     }
 
-    public Status GetStatus()
+    public Status getStatus()
     {
         return status;
     }
     
-    public virtual void DisplayTask()
+    public virtual void displayTask()
     {
         Console.ForegroundColor = ConsoleColor.Cyan;
         Console.WriteLine("=====================================");
@@ -49,7 +49,7 @@ public class Task
         
         Console.WriteLine("=====================================");
         Console.ForegroundColor = ConsoleColor.Green;
-        Console.WriteLine($"Autor: {autor.GetName()}");
+        Console.WriteLine($"Autor: {autor.getName()}");
         Console.ForegroundColor = ConsoleColor.White;
 
         Console.WriteLine("=====================================");    

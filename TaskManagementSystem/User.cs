@@ -10,13 +10,17 @@ public class User
     {
         userID = userId;
         this.name = name;
+        assignedTasks = new List<Task>();
     }
 
     public void assignTasks(List<Task> tasksToBeAssigned)
     {
-        for (int i = 0; i < tasksToBeAssigned.Count; i++)
+        if (tasksToBeAssigned != null)
         {
-            assignedTasks.Add(tasksToBeAssigned[i]);
+            for (int i = 0; i < tasksToBeAssigned.Count; i++)
+            {
+                assignedTasks.Add(tasksToBeAssigned[i]);
+            }
         }
     }
 
@@ -24,8 +28,8 @@ public class User
     {
         return assignedTasks;
     }
-    
-    public string GetName()
+        
+    public string getName()
     {
         return name;
     }

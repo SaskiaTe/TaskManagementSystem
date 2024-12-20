@@ -10,9 +10,9 @@ public class FeatureTask : Task
         this.releaseDatum = releaseDatum;
     }
 
-    public override void DisplayTask()
+    public override void displayTask()
     {
-        base.DisplayTask();
+        base.displayTask();
             
         Console.ForegroundColor = ConsoleColor.Yellow;
         Console.WriteLine($"ReleaseDatum: {releaseDatum}");

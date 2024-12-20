@@ -10,9 +10,9 @@ public class BugTask : Task
         this.schwirigkeit = schwirigkeit;
     }
 
-    public override void DisplayTask()
+    public override void displayTask()
     {
-        base.DisplayTask();
+        base.displayTask();
             
         Console.ForegroundColor = ConsoleColor.Yellow;
         Console.WriteLine($"Schwierigkeit: {schwirigkeit}");

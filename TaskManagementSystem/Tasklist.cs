@@ -24,7 +24,7 @@ public class Tasklist
         List<Task> filteredTasks = new List<Task>();
         for (int i = 0; i < _tasks.Count; i++)
         {
-            if (statusToFilter == _tasks.ElementAt(i).GetStatus())
+            if (statusToFilter == _tasks.ElementAt(i).getStatus())
             {
                 filteredTasks.Add(_tasks.ElementAt(i));
             }
