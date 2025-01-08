@@ -4,6 +4,11 @@ public class Tasklist
 {
     private List<Task> _tasks;
 
+    public Tasklist()
+    {
+        _tasks = new List<Task>();
+    }
+
     public void addTask(Task toBeAddedTask)
     {
         _tasks.Add(toBeAddedTask);

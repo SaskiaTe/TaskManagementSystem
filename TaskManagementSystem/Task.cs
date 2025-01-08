@@ -46,12 +46,19 @@ public class Task
         Console.WriteLine($"Priorität: {prioriteat}"); 
         Console.WriteLine($"Schätzung: {scheatzung} Stunden");
         Console.WriteLine($"Status: {status}");
-        
-        Console.WriteLine("=====================================");
-        Console.ForegroundColor = ConsoleColor.Green;
-        Console.WriteLine($"Autor: {autor.getName()}");
-        Console.ForegroundColor = ConsoleColor.White;
 
-        Console.WriteLine("=====================================");    
+        if (autor != null)
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine($"Autor: {autor.getName()}");
+        }
+        else
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("Autor: Nicht zugewiesen");
+        }
+        Console.ForegroundColor = ConsoleColor.White;
+        Console.WriteLine("=====================================");
     }
+
 }
