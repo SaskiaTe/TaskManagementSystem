@@ -7,7 +7,7 @@
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=3cd89aaa_002D6eff_002D4bd0_002D8b4f_002D8890dd54bb75/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TasklistTests #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
-    &lt;TestId&gt;MSTest::C4728548-7B17-4661-A7FD-CFD411C6285E::net8.0::TaskManagmentSystem.TasklistTests&lt;/TestId&gt;
+    &lt;TestId&gt;MSTest::C4728548-7B17-4661-A7FD-CFD411C6285E::net8.0::TaskManagmentSystem.TasklistTest&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=6c25d054_002D8cf1_002D46a6_002D816e_002D531a9c1f8133/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TasklistTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;

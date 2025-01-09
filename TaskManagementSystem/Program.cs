@@ -1,5 +1,4 @@
-﻿
-namespace TaskManagementSystem
+﻿namespace TaskManagementSystem
 {
     class Program
     {
@@ -35,12 +34,7 @@ namespace TaskManagementSystem
                             int schaetzung = int.Parse(Console.ReadLine());
                             Console.Write("Status (0: OFFEN, 1: INBEARBEITUNG, 2: ABGESCHLOSSEN, 3: WARTEND, 4: BLOKIERD): ");
                             Status status = (Status)int.Parse(Console.ReadLine());
-                            
-                            /*
-                             
-                            Console.Write("Release Datum: ");
-                            DateOnly releaseDatum = DateOnly.TryParse(Console.ReadLine());
-*/
+
                             Console.Write("Benutzername für den Autor: ");
                             string autorName = Console.ReadLine();
                             User autor = new User(users.Count + 1, autorName);
@@ -62,9 +56,18 @@ namespace TaskManagementSystem
                             Console.Write("Status zum Filtern eingeben (0: OFFEN, 1: INBEARBEITUNG, 2: ABGESCHLOSSEN, 3: WARTEND, 4: BLOKIERD): ");
                             Status filterStatus = (Status)int.Parse(Console.ReadLine());
                             var filteredTasks = tasklist.filterTasks(filterStatus);
-                            foreach (var task in filteredTasks)
+
+                            if (filteredTasks.Count == 0)
                             {
-                                task.displayTask();
+                                Console.WriteLine("Keine Aufgaben gefunden mit diesem Status.");
+                            }
+                            else
+                            {
+                                Console.WriteLine("Gefilterte Aufgaben:");
+                                foreach (var task in filteredTasks)
+                                {
+                                    task.displayTask();
+                                }
                             }
                             break;
 
