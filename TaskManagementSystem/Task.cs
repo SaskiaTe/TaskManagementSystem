@@ -32,7 +32,11 @@ public class Task
     {
         return status;
     }
-    
+    public string getTitle()
+    {
+        return titel;
+    }
+
     public virtual void displayTask()
     {
         Console.ForegroundColor = ConsoleColor.Cyan;

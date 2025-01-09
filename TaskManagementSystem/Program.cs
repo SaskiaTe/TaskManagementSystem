@@ -35,11 +35,15 @@ namespace TaskManagementSystem
                             int schaetzung = int.Parse(Console.ReadLine());
                             Console.Write("Status (0: OFFEN, 1: INBEARBEITUNG, 2: ABGESCHLOSSEN, 3: WARTEND, 4: BLOKIERD): ");
                             Status status = (Status)int.Parse(Console.ReadLine());
-
+                            
+                            /*
+                             
+                            Console.Write("Release Datum: ");
+                            DateOnly releaseDatum = DateOnly.TryParse(Console.ReadLine());
+*/
                             Console.Write("Benutzername für den Autor: ");
                             string autorName = Console.ReadLine();
                             User autor = new User(users.Count + 1, autorName);
-                            users.Add(autor);
 
                             Task newTask = new Task(titel, beschreibung, DateOnly.FromDateTime(DateTime.Now), prioritaet, schaetzung, status, autor);
                             tasklist.addTask(newTask);
@@ -55,7 +59,7 @@ namespace TaskManagementSystem
                             break;
 
                         case 3:
-                            Console.Write("Status zum Filtern eingeben (0-4): ");
+                            Console.Write("Status zum Filtern eingeben (0: OFFEN, 1: INBEARBEITUNG, 2: ABGESCHLOSSEN, 3: WARTEND, 4: BLOKIERD): ");
                             Status filterStatus = (Status)int.Parse(Console.ReadLine());
                             var filteredTasks = tasklist.filterTasks(filterStatus);
                             foreach (var task in filteredTasks)
@@ -67,9 +71,17 @@ namespace TaskManagementSystem
                         case 4:
                             Console.Write("Benutzername: ");
                             string name = Console.ReadLine();
-                            User newUser = new User(users.Count + 1, name);
-                            users.Add(newUser);
-                            Console.WriteLine("Benutzer erfolgreich hinzugefügt!");
+                            bool nameExists = users.Any(user => user.getName().Equals(name, StringComparison.OrdinalIgnoreCase));
+                            if (nameExists)
+                            {
+                                Console.WriteLine("Der Benutzername existiert bereits. Bitte wählen Sie einen anderen Namen.");
+                            }
+                            else
+                            {
+                                User newUser = new User(users.Count + 1, name);
+                                users.Add(newUser);
+                                Console.WriteLine("Benutzer erfolgreich hinzugefügt!");
+                            }
                             break;
 
                         case 5:
@@ -84,7 +96,7 @@ namespace TaskManagementSystem
                             var tasks = tasklist.getAllTasks();
                             for (int i = 0; i < tasks.Count; i++)
                             {
-                                Console.WriteLine($"{i + 1}. {tasks[i].getStatus()}");
+                                Console.WriteLine($"{i + 1}. {tasks[i].getTitle()} {tasks[i].getStatus()}");
                             }
                             int taskChoice = int.Parse(Console.ReadLine()) - 1;
 
