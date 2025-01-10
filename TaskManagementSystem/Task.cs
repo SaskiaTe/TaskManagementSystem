@@ -23,11 +23,6 @@ public class Task
         this.autor = autor;
     }
     
-    public void UpdateStatus(Status newStatus)
-    {
-        status = newStatus; 
-    }
-
     public Status getStatus()
     {
         return status;
