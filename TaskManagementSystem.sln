@@ -4,6 +4,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManagementSystem", "Tas
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManagmentSystemTest", "TaskManagmentSystemTest\TaskManagmentSystemTest.csproj", "{C4728548-7B17-4661-A7FD-CFD411C6285E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dokumente", "Dokumente", "{CDE3D9D2-AEFF-4E82-B403-BDEA12F66CAE}"
+	ProjectSection(SolutionItems) = preProject
+		M320 Projektviedeo.mov.zip = M320 Projektviedeo.mov.zip
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
